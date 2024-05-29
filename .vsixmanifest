@@ -4,7 +4,7 @@
 			<Identity Language="en-US" Id="theme-vitesse" Version="0.0.1" Publisher="huid" />
 			<DisplayName>Vitesse Theme</DisplayName>
 			<Description xml:space="preserve">Vitesse theme for VS Code</Description>
-			<Tags>theme,vitesse,light,dark,color-theme,__web_extension</Tags>
+			<Tags>theme,vitesse,light,dark,dracula,monokai,color-theme,__web_extension</Tags>
 			<Categories>Themes</Categories>
 			<GalleryFlags>Public Preview</GalleryFlags>
 
