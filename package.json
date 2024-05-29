@@ -1,7 +1,7 @@
 {
 	"publisher": "huid",
-	"name": "huid-theme-vitesse",
-	"displayName": "huid Vitesse Theme",
+	"name": "my-theme-vitesse",
+	"displayName": "my Vitesse Theme",
 	"version": "0.0.1",
 	"packageManager": "pnpm@9.1.1",
 	"description": "Vitesse theme for VS Code",
@@ -17,7 +17,9 @@
 		"theme",
 		"vitesse",
 		"light",
-		"dark"
+		"dark",
+        "monokai",
+        "dracula"
 	],
 	"categories": [
 		"Themes"
