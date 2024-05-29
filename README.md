@@ -10,7 +10,6 @@
 <sub><samp>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Font | <a href="http://input.fontbureau.com/">Input Mono</a><br>
 &nbsp;File Icons | <a href="https://marketplace.visualstudio.com/items?itemName=file-icons.file-icons">File Icons</a><br>
 Product Icons | <a href="https://github.com/antfu/vscode-icons-carbon">Carbon</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Demo | <a href="https://github.com/antfu/vitesse">Vitesse</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</samp></sub>
 </p>
 
 ## Match with System
@@ -26,17 +25,25 @@ Product Icons | <a href="https://github.com/antfu/vscode-icons-carbon">Carbon</a
 }
 ```
 
-## Links
+## Code
+```bash
+# clone
+git clone git@github.com:zhanghuid/vscode-theme-vitesse.git
 
-[prism-theme-vars](https://github.com/antfu/prism-theme-vars) - where the theme is born.
+# login to the vscode marketplace
+vsce login your-name
 
-[vitesse](https://github.com/antfu/vitesse) - what the theme was for.
+# build the package
+vsce package
+
+```
 
 ## Thanks
 
-This project is based on [github-vscode-theme](https://github.com/primer/github-vscode-theme).
+This project is based on [vscode-theme-vitesse](https://github.com/antfu/vscode-theme-vitesse).
 
 ## License
 
 MIT - Copyright (c) 2020 Primer <br>
 MIT - Copyright (c) 2021 Anthony Fu
+MIT - Copyright (c) 2024 Huid
