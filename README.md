@@ -8,8 +8,10 @@
 <img alt="Screen Shot 2021-03-08 at 12 32 54 AM" src="https://user-images.githubusercontent.com/11247099/110247185-ed26b380-7fa5-11eb-8fce-6c224bb6ef26.png">
 <img alt="Screen Shot 2021-03-08 at 12 33 16 AM" src="https://user-images.githubusercontent.com/11247099/110247187-f1eb6780-7fa5-11eb-9258-620309e20961.png">
 
-<img width="940" alt="110247187-f1eb6780-7fa5-11eb-9258-620309e20961" src="https://github.com/zhanghuid/vscode-theme-vitesse/assets/12711819/de6d9484-5e2e-4eca-bcda-2b7984e2400b">
-<img width="940" alt="110247187-f1eb6780-7fa5-11eb-9258-620309e20961" src="https://github.com/zhanghuid/vscode-theme-vitesse/assets/12711819/705f3d83-ec9d-43d8-83e2-cbbb24850a32">
+
+![截屏2024-05-30 18 02 35](https://github.com/zhanghuid/vscode-theme-vitesse/assets/12711819/39805e71-57dd-4e99-b540-98b372c22f4a)
+![截屏2024-05-30 18 02 55](https://github.com/zhanghuid/vscode-theme-vitesse/assets/12711819/6f479fa8-ac93-46ba-a9fc-0b00a851f40c)
+
 
 
 <sub><samp>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Font | <a href="http://input.fontbureau.com/">Input Mono</a><br>
