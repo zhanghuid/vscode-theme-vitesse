@@ -9,8 +9,9 @@
 <img alt="Screen Shot 2021-03-08 at 12 33 16 AM" src="https://user-images.githubusercontent.com/11247099/110247187-f1eb6780-7fa5-11eb-9258-620309e20961.png">
 
 
-![截屏2024-05-30 18 02 35](https://github.com/zhanghuid/vscode-theme-vitesse/assets/12711819/39805e71-57dd-4e99-b540-98b372c22f4a)
-![截屏2024-05-30 18 02 55](https://github.com/zhanghuid/vscode-theme-vitesse/assets/12711819/6f479fa8-ac93-46ba-a9fc-0b00a851f40c)
+
+![截屏2024-05-30 18 22 44](https://github.com/zhanghuid/vscode-theme-vitesse/assets/12711819/31a046e0-0b51-4281-99b0-f4136b23c90f)
+![截屏2024-05-30 18 22 52](https://github.com/zhanghuid/vscode-theme-vitesse/assets/12711819/b2747fc1-29ec-40c2-96e8-68a241907130)
 
 
 
