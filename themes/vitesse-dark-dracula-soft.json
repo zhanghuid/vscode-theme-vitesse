@@ -1119,6 +1119,20 @@
             "settings": {
                 "foreground": "#7b7f8b"
             }
+        },
+        {
+            "name": "PHP String Quoted Single",
+            "scope": "string.quoted.single.php",
+            "settings": {
+                "foreground": "#c29189" // 设置字符串颜色
+            }
+        },
+        {
+            "name": "PHP Punctuation Definition Variable",
+            "scope": "punctuation.definition.variable",
+            "settings": {
+                "foreground": "#c67607" // 设置字符串颜色
+            }
         }
     ],
     "rules": [
