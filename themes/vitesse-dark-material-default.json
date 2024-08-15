@@ -192,8 +192,7 @@
         "editor.selectionHighlightBackground": "#3f5668",
         "editor.findMatchHighlightBackground": "#3f5668",
         "editor.wordHighlightBackground": "#89defd",
-        "editorBracketMatch.border": "#eef1f3",
-        "editorBracketMatch.background": "#89defd"
+        "editorBracketMatch.border": "#eef1f3"
     },
     "semanticHighlighting": true,
     "semanticTokenColors": {
