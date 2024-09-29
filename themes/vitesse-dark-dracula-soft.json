@@ -1126,7 +1126,7 @@
             "name": "PHP String Quoted Single",
             "scope": "string.quoted.single.php",
             "settings": {
-                "foreground": "#bd6b5f" // 设置字符串颜色
+                "foreground": "#f4f1a6" // 设置字符串颜色
             }
         },
         {
@@ -1134,6 +1134,12 @@
             "scope": "punctuation.definition.variable",
             "settings": {
                 "foreground": "#c67607" // 设置字符串颜色
+            }
+        },
+        {
+            "scope": "variable",
+            "settings": {
+                "foreground": "#e1bc7f"
             }
         }
     ],

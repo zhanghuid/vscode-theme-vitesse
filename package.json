@@ -2,7 +2,7 @@
 	"publisher": "huid",
 	"name": "my-theme-vitesse",
 	"displayName": "My Vitesse Theme",
-	"version": "0.0.9",
+	"version": "0.0.10",
 	"packageManager": "pnpm@9.1.1",
 	"description": "Vitesse theme for VS Code",
 	"license": "MIT",
@@ -20,7 +20,9 @@
 		"dark",
 		"monokai",
 		"dracula",
-		"material"
+		"material",
+		"oneDark",
+		"github"
 	],
 	"categories": [
 		"Themes"
@@ -77,6 +79,16 @@
 				"label": "Vitesse Dark Material Default",
 				"uiTheme": "vs-dark",
 				"path": "./themes/vitesse-dark-material-default.json"
+			},
+			{
+				"label": "Vitesse Dark One Dark Soft",
+				"uiTheme": "vs-dark",
+				"path": "./themes/vitesse-dark-one-dark-soft.json"
+			},
+			{
+				"label": "Vitesse Dark Github Soft",
+				"uiTheme": "vs-dark",
+				"path": "./themes/vitesse-dark-github-soft.json"
 			}
 		]
 	},
@@ -104,5 +116,18 @@
 		"typescript": "^5.4.5",
 		"xterm": "^5.3.0"
 	},
-	"preview": true
+	"preview": true,
+	"__metadata": {
+		"id": "08d2f8a5-544c-4d6a-b255-8b1905a36a27",
+		"publisherId": "9759fda8-1e28-4fa6-9e1c-7b168c21ba28",
+		"publisherDisplayName": "huid",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": true,
+		"isPreReleaseVersion": false,
+		"hasPreReleaseVersion": false,
+		"installedTimestamp": 1723721322295,
+		"pinned": false,
+		"preRelease": false,
+		"source": "gallery"
+	}
 }
