@@ -51,12 +51,6 @@
         "sideBarSectionHeader.foreground": "#dbd7caee",
         "sideBarSectionHeader.background": "#222",
         "sideBarSectionHeader.border": "#252525",
-        "list.hoverForeground": "#dbd7caee",
-        "list.inactiveSelectionForeground": "#dbd7caee",
-        "list.activeSelectionForeground": "#dbd7caee",
-        "list.hoverBackground": "#292929",
-        "list.inactiveSelectionBackground": "#292929",
-        "list.activeSelectionBackground": "#292929",
         "list.inactiveFocusBackground": "#222",
         "list.focusBackground": "#292929",
         "list.highlightForeground": "#4d9375",
@@ -192,7 +186,14 @@
         "editor.selectionHighlightBackground": "#3f5668",
         "editor.findMatchHighlightBackground": "#3f5668",
         "editor.wordHighlightBackground": "#89defd",
-        "editorBracketMatch.border": "#eef1f3"
+        "editorBracketMatch.border": "#eef1f3",
+        "list.foreground": "#ffffff",
+        "list.activeSelectionForeground": "#ffffff",
+        "list.inactiveSelectionForeground": "#ffffff",
+        "list.hoverForeground": "#ffffff",
+        "list.activeSelectionBackground": "#3a3d41",
+        "list.inactiveSelectionBackground": "#4a4d51",
+        "list.hoverBackground": "#4a4d51"
     },
     "semanticHighlighting": true,
     "semanticTokenColors": {
