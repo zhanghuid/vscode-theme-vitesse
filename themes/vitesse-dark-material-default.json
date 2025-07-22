@@ -192,7 +192,7 @@
         "editor.findMatchHighlightBorder": "#fff",
         "editor.selectionHighlightBackground": "#3f5668",
         "editor.findMatchHighlightBackground": "#3f5668",
-        "editor.wordHighlightBackground": "#89defd",
+        "editor.wordHighlightBackground": "#1c6b4810",
         "editor.background": "#222"
     },
     "semanticHighlighting": true,
