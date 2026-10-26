@@ -78,10 +78,28 @@ vsce package
 
 ## Thanks
 
-This project is based on [vscode-theme-vitesse](https://github.com/antfu/vscode-theme-vitesse).
+This project is based on [vscode-theme-vitesse](https://github.com/antfu/vscode-theme-vitesse)
+by [Anthony Fu](https://github.com/antfu), which in turn derives from
+[Vitesse](https://github.com/antfu/vitesse). The colour definitions in
+`scripts/` and the generated files in `themes/` come from that project.
+
+The custom styling this theme ships would not be possible without
+[Custom CSS and JS Loader](https://github.com/be5invis/vscode-custom-css) by
+[Belleve Invis](https://typeof.net), which itself is based on
+[vscode-icons](https://github.com/robertohuertasm/vscode-icons) by
+Roberto Huertas. This theme declares it as an `extensionPack` dependency and
+drives it through its public commands — the work of patching VS Code's
+`workbench.html`, backing it up and restoring it is entirely theirs.
+
+Thank you to both projects for making this possible.
+
+See [NOTICE.md](./NOTICE.md) for the full third-party license texts.
 
 ## License
 
 MIT - Copyright (c) 2020 Primer <br>
 MIT - Copyright (c) 2021 Anthony Fu <br>
 MIT - Copyright (c) 2024 Huid
+
+Third-party components are listed in [NOTICE.md](./NOTICE.md).
+

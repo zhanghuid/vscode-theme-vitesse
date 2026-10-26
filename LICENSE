@@ -4,6 +4,11 @@ Copyright (c) 2020 Primer
 Copyright (c) 2021 Anthony Fu
 Copyright (c) 2021 Huid
 
+This project depends on Custom CSS and JS Loader
+(https://github.com/be5invis/vscode-custom-css), Copyright (c) 2016 Roberto
+Huertas and Copyright (c) 2016 Belleve Invis, distributed under the MIT
+license. See NOTICE.md for the full license text.
+
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
