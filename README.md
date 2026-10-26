@@ -33,6 +33,36 @@ Product Icons | <a href="https://github.com/antfu/vscode-icons-carbon">Carbon</a
 }
 ```
 
+## Bundled Custom CSS
+
+This extension ships with [Custom CSS and JS Loader](https://github.com/be5invis/vscode-custom-css)
+as an extension pack, plus two style files in [`custom/`](./custom):
+
+- `custom/custom-vscode.css` — UI overrides (title bar, activity bar, command palette, …)
+- `custom/vscode-script.js` — command palette background blur
+
+Installing the theme installs the loader automatically. On first activation the theme
+adds both files to `vscode_custom_css.imports` and enables them for you.
+
+> **The loader patches VS Code's own `workbench.html`.** It needs write access to the
+> VS Code installation directory. On macOS, grant it with:
+>
+> ```sh
+> sudo chown -R $(whoami) "$(which code)"
+> sudo chown -R $(whoami) /usr/share/code
+> ```
+
+**After every VS Code update** the patch is wiped. Just run
+`Vitesse: Apply Custom CSS and JS` from the Command Palette and restart.
+
+**To opt out**, set `"my-theme-vitesse.autoApplyCustomCss": false`, or run
+`Vitesse: Restore Custom CSS and JS` to undo the patch. Existing entries in
+`vscode_custom_css.imports` are preserved — only this extension's own files are managed.
+
+If VS Code reports that its installation is corrupted, that is expected for a patched
+workbench; click "Don't show again", or install
+[Fix VSCode Checksums Next](https://marketplace.visualstudio.com/items?itemName=RimuruChan.vscode-fix-checksums-next).
+
 ## Code
 ```bash
 # clone

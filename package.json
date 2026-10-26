@@ -2,10 +2,17 @@
 	"publisher": "huid",
 	"name": "my-theme-vitesse",
 	"displayName": "My Vitesse Theme",
-	"version": "0.0.14",
+	"version": "0.0.15",
 	"packageManager": "pnpm@9.1.1",
-	"description": "Vitesse theme for VS Code",
+	"description": "Vitesse theme for VS Code, bundled with Custom CSS and JS Loader",
 	"license": "MIT",
+	"main": "./extension.js",
+	"activationEvents": [
+		"onStartupFinished"
+	],
+	"extensionPack": [
+		"be5invis.vscode-custom-css"
+	],
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/zhanghuid/vscode-theme-vitesse"
@@ -31,14 +38,30 @@
 		"./*": "./*"
 	},
 	"icon": "icon.png",
-	"files": [
-		"extra",
-		"themes"
-	],
 	"engines": {
-		"vscode": "^1.43.0"
+		"vscode": "^1.93.0"
 	},
 	"contributes": {
+		"commands": [
+			{
+				"command": "my-theme-vitesse.applyCustomCss",
+				"title": "Vitesse: Apply Custom CSS and JS"
+			},
+			{
+				"command": "my-theme-vitesse.restoreCustomCss",
+				"title": "Vitesse: Restore Custom CSS and JS"
+			}
+		],
+		"configuration": {
+			"title": "My Vitesse Theme",
+			"properties": {
+				"my-theme-vitesse.autoApplyCustomCss": {
+					"type": "boolean",
+					"default": true,
+					"description": "On startup, automatically enable the bundled Custom CSS/JS files through the Custom CSS and JS Loader extension. Turn off to manage it yourself."
+				}
+			}
+		},
 		"themes": [
 			{
 				"label": "Vitesse Light",
