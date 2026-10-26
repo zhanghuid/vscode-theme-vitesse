@@ -1,5 +1,3 @@
-// 20240529134136
-// https://raw.githubusercontent.com/zhanghuid/vscode-theme-vitesse/main/themes/vitesse-dark-dracula-soft.json
 {
     "name": "Vitesse Dark Dracula Soft",
     "base": "vs-dark",
@@ -175,12 +173,14 @@
         "editorStickyScroll.background": "#292929",
         "editorStickyScrollHover.background": "#292929",
         "menu.separatorBackground": "#252525",
-        "editorBracketMatch.border": "#FF0000",
-        "editorBracketMatch.background": "#0052cc",
+        "editorBracketMatch.border": "#4d9375",
+        "editorBracketHighlight.unexpectedBracket.foreground": "#cb7676",
+        "editorBracketMatch.background": "#4d937520",
         "editor.foreground": "#dbd7caee",
         "editor.foldBackground": "#eeeeee10",
         "editor.inactiveSelectionBackground": "#eeeeee10",
-        "editor.wordHighlightStrongBackground": "#1c6b4810",
+        "editor.wordHighlightStrongBackground": "#4d937530",
+        "editor.wordHighlightStrongBorder": "#4d937599",
         "editor.stackFrameHighlightBackground": "#a707",
         "editor.focusedStackFrameHighlightBackground": "#b808",
         "editor.lineHighlightBackground": "#1073cf2d",
@@ -191,7 +191,8 @@
         "editor.findMatchHighlightBorder": "#fff",
         "editor.selectionHighlightBackground": "#3f5668",
         "editor.findMatchHighlightBackground": "#3f5668",
-        "editor.wordHighlightBackground": "#1c6b4810",
+        "editor.wordHighlightBackground": "#4d937526",
+        "editor.wordHighlightBorder": "#4d937566",
         "editor.background": "#222"
         
     },
@@ -463,7 +464,7 @@
             ],
             "settings": {
                 "foreground": "#97e1f1",
-                "fontStyle": "normal"
+                "fontStyle": ""
             }
         },
         {
@@ -691,7 +692,7 @@
                 "variable.other.predefined"
             ],
             "settings": {
-                "fontStyle": "regular",
+                "fontStyle": "",
                 "foreground": "#bf9eee"
             }
         },
@@ -702,7 +703,7 @@
                 "support.type.property-name"
             ],
             "settings": {
-                "fontStyle": "regular"
+                "fontStyle": ""
             }
         },
         {
@@ -821,7 +822,7 @@
                 "source.groovy storage.type.def"
             ],
             "settings": {
-                "fontStyle": "regular",
+                "fontStyle": "",
                 "foreground": "#f286c4"
             }
         },
@@ -1015,7 +1016,7 @@
                 "meta.variable.assignment.destructured.object.coffee variable variable"
             ],
             "settings": {
-                "fontStyle": "normal",
+                "fontStyle": "",
                 "foreground": "#f6f6f4"
             }
         },
@@ -1083,7 +1084,7 @@
                 "support.constant"
             ],
             "settings": {
-                "fontStyle": "normal",
+                "fontStyle": "",
                 "foreground": "#bf9eee"
             }
         },
@@ -1128,14 +1129,14 @@
             "name": "PHP String Quoted Single",
             "scope": "string.quoted.single.php",
             "settings": {
-                "foreground": "#f4f1a6" // 设置字符串颜色
+                "foreground": "#f4f1a6"
             }
         },
         {
             "name": "PHP Punctuation Definition Variable",
             "scope": "punctuation.definition.variable",
             "settings": {
-                "foreground": "#c67607" // 设置字符串颜色
+                "foreground": "#c67607"
             }
         },
         {

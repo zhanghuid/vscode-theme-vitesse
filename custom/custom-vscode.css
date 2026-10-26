@@ -298,6 +298,18 @@ li.action-item.icon.checked a.action-label.codicon {
   margin-left: 0 !important;
 }
 
+/* ------------ Occurrence / matching tag highlight ------------ */
+/* VS Code ships these as a 1px box on all four sides, which on a tag reads as
+   a cramped outline. Replace it with a single underline so the matched tag is
+   marked without boxing the text in. Clicking an HTML tag uses the Read kind,
+   which VS Code paints with wordHighlightStrong. */
+.monaco-editor .wordHighlightStrong,
+.monaco-editor .wordHighlight,
+.monaco-editor .wordHighlightText {
+  border: none !important;
+  box-shadow: inset 0 -2px 0 0 var(--vscode-editor-wordHighlightStrongBorder);
+}
+
 /* ------------ Terminal ------------ */
 .monaco-workbench .pane-body.integrated-terminal .terminal-tabs-entry.is-active:before {
   display: block;

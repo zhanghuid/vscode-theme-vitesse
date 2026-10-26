@@ -113,9 +113,13 @@
     "editor.inactiveSelectionBackground": "#22222210",
     "editor.selectionBackground": "#22222218",
     "editor.selectionHighlightBackground": "#22222210",
-    "editor.wordHighlightBackground": "#1c6b4805",
-    "editor.wordHighlightStrongBackground": "#1c6b4810",
+    "editor.wordHighlightBackground": "#1c6b4826",
+    "editor.wordHighlightBorder": "#1c6b4866",
+    "editor.wordHighlightStrongBackground": "#1c6b4830",
+    "editor.wordHighlightStrongBorder": "#1c6b4899",
     "editorBracketMatch.background": "#1c6b4820",
+    "editorBracketMatch.border": "#1c6b48",
+    "editorBracketHighlight.unexpectedBracket.foreground": "#ab5959",
     "diffEditor.insertedTextBackground": "#1c6b4830",
     "diffEditor.removedTextBackground": "#ab595940",
     "scrollbar.shadow": "#6a737d33",
@@ -672,7 +676,7 @@
         "invalid.illegal.unrecognized-tag.html"
       ],
       "settings": {
-        "fontStyle": "normal"
+        "fontStyle": ""
       }
     }
   ],

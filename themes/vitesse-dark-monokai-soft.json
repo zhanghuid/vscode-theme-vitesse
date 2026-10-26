@@ -1,5 +1,3 @@
-// 20240529134136
-// https://raw.githubusercontent.com/zhanghuid/vscode-theme-vitesse/main/themes/vitesse-dark-monokai-soft.json
 {
     "name": "Vitesse Dark Monokai Soft",
     "base": "vs-dark",
@@ -175,12 +173,14 @@
         "editorStickyScroll.background": "#292929",
         "editorStickyScrollHover.background": "#292929",
         "menu.separatorBackground": "#252525",
-        "editorBracketMatch.border": "#FF0000",
-        "editorBracketMatch.background": "#0052cc",
+        "editorBracketMatch.border": "#4d9375",
+        "editorBracketHighlight.unexpectedBracket.foreground": "#cb7676",
+        "editorBracketMatch.background": "#4d937520",
         "editor.foreground": "#dbd7caee",
         "editor.foldBackground": "#eeeeee10",
         "editor.inactiveSelectionBackground": "#eeeeee10",
-        "editor.wordHighlightStrongBackground": "#1c6b4810",
+        "editor.wordHighlightStrongBackground": "#4d937530",
+        "editor.wordHighlightStrongBorder": "#4d937599",
         "editor.stackFrameHighlightBackground": "#a707",
         "editor.focusedStackFrameHighlightBackground": "#b808",
         "editor.lineHighlightBackground": "#1073cf2d",
@@ -191,7 +191,8 @@
         "editor.findMatchHighlightBorder": "#fff",
         "editor.selectionHighlightBackground": "#3f5668",
         "editor.findMatchHighlightBackground": "#3f5668",
-        "editor.wordHighlightBackground": "#1c6b4810",
+        "editor.wordHighlightBackground": "#4d937526",
+        "editor.wordHighlightBorder": "#4d937566",
         "editor.background": "#222"
     },
     "semanticHighlighting": true,
@@ -606,7 +607,7 @@
                 "support.class"
             ],
             "settings": {
-                "foreground": "#66D9EF",
+                "foreground": "#66D9EF"
             }
         },
         {
@@ -650,7 +651,7 @@
                 "meta.type.new.expr",
                 "support.constant.math",
                 "support.constant.dom",
-                "support.constant.json",
+                "support.constant.json"
             ],
             "settings": {
                 "foreground": "#4EC9B0"

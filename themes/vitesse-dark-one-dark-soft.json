@@ -1,5 +1,5 @@
 {
-    "name": "Vitesse Dark Soft",
+    "name": "Vitesse Dark One Dark Soft",
     "base": "vs-dark",
     "colors": {
         "focusBorder": "#00000000",
@@ -165,7 +165,8 @@
         "editorStickyScroll.background": "#292929",
         "editorStickyScrollHover.background": "#292929",
         "menu.separatorBackground": "#252525",
-        "editorBracketMatch.border": "#eef1f3",
+        "editorBracketMatch.border": "#4d9375",
+        "editorBracketHighlight.unexpectedBracket.foreground": "#cb7676",
         "tab.activeBorder": "#d0f66f",
         "list.foreground": "#ffffff",
         "list.activeSelectionForeground": "#ffffff",
@@ -177,7 +178,8 @@
         "editor.foreground": "#dbd7caee",
         "editor.foldBackground": "#eeeeee10",
         "editor.inactiveSelectionBackground": "#eeeeee10",
-        "editor.wordHighlightStrongBackground": "#1c6b4810",
+        "editor.wordHighlightStrongBackground": "#4d937530",
+        "editor.wordHighlightStrongBorder": "#4d937599",
         "editor.stackFrameHighlightBackground": "#a707",
         "editor.focusedStackFrameHighlightBackground": "#b808",
         "editor.lineHighlightBackground": "#1073cf2d",
@@ -188,7 +190,8 @@
         "editor.findMatchHighlightBorder": "#fff",
         "editor.selectionHighlightBackground": "#3f5668",
         "editor.findMatchHighlightBackground": "#3f5668",
-        "editor.wordHighlightBackground": "#1c6b4810",
+        "editor.wordHighlightBackground": "#4d937526",
+        "editor.wordHighlightBorder": "#4d937566",
         "editor.background": "#222"
     },
     "semanticHighlighting": true,

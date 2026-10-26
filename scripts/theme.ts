@@ -161,9 +161,18 @@ export default function getTheme(options: GetThemeOptions) {
       'editor.inactiveSelectionBackground': selectionBackgroundInActive,
       'editor.selectionBackground': selectionBackground,
       'editor.selectionHighlightBackground': selectionBackgroundInActive,
-      'editor.wordHighlightBackground': pick({ light: '#1c6b4805', dark: '#1c6b4805' }),
-      'editor.wordHighlightStrongBackground': pick({ light: '#1c6b4810', dark: '#1c6b4810' }),
+      // Clicking an HTML tag highlights its closing tag via a Read-kind document
+      // highlight, which VS Code paints with wordHighlightStrong. At the old 2%
+      // alpha (#1c6b4805) that was invisible; the border gives it an edge.
+      'editor.wordHighlightBackground': pick({ light: '#1c6b4826', dark: '#4d937526' }),
+      'editor.wordHighlightBorder': pick({ light: '#1c6b4866', dark: '#4d937566' }),
+      'editor.wordHighlightStrongBackground': pick({ light: '#1c6b4830', dark: '#4d937530' }),
+      'editor.wordHighlightStrongBorder': pick({ light: '#1c6b4899', dark: '#4d937599' }),
+      // Matched bracket pair: the 12.5% background alone reads as nothing, so the
+      // border is what actually marks the pair.
       'editorBracketMatch.background': pick({ light: '#1c6b4820', dark: '#4d937520' }),
+      'editorBracketMatch.border': pick({ light: '#1c6b48', dark: '#4d9375' }),
+      'editorBracketHighlight.unexpectedBracket.foreground': v('red'),
 
       'diffEditor.insertedTextBackground': pick({ light: '#1c6b4830', dark: '#4d937550' }),
       'diffEditor.removedTextBackground': pick({ light: '#ab595940', dark: '#ab595950' }),
@@ -726,7 +735,9 @@ export default function getTheme(options: GetThemeOptions) {
           'invalid.illegal.unrecognized-tag.html',
         ],
         settings: {
-          fontStyle: 'normal',
+          // The schema only accepts italic/bold/underline/strikethrough or the
+          // empty string; "" is how you unset an inherited style.
+          fontStyle: '',
         },
       },
     ],
