@@ -35,14 +35,20 @@ Product Icons | <a href="https://github.com/antfu/vscode-icons-carbon">Carbon</a
 
 ## Bundled Custom CSS
 
-This extension ships with [Custom CSS and JS Loader](https://github.com/be5invis/vscode-custom-css)
-as an extension pack, plus two style files in [`custom/`](./custom):
+This extension ships two style files in [`custom/`](./custom):
 
 - `custom/custom-vscode.css` — UI overrides (title bar, activity bar, command palette, …)
 - `custom/vscode-script.js` — command palette background blur
 
-Installing the theme installs the loader automatically. On first activation the theme
-adds both files to `vscode_custom_css.imports` and enables them for you.
+They are applied through [Custom CSS and JS Loader](https://github.com/be5invis/vscode-custom-css),
+which is **VS Code only**. On install from the VS Code Marketplace the loader comes
+along as an extension pack; the Open VSX build carries the colour themes alone.
+
+On activation the theme checks that a loader is actually installed before doing
+anything. If none is found it says so and leaves your settings untouched — it never
+writes `vscode_custom_css.imports` for an extension that is not there. Both the
+official build (`be5invis.vscode-custom-css`) and the Open VSX mirror
+(`s-h-a-d-o-w.vscode-custom-css`) are recognised.
 
 > **The loader patches VS Code's own `workbench.html`.** It needs write access to the
 > VS Code installation directory. On macOS, grant it with:

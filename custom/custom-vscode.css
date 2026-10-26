@@ -41,34 +41,36 @@
 }
 
 .monaco-workbench .activitybar>.content :not(.monaco-menu)>.monaco-action-bar .action-item {
-  /* background: var(--vscode-editor-lineHighlightBackground) !important; */
   border-radius: 12px;
   margin-bottom: 4px;
-  width: 36px !important;   /* ← 问题所在 */
-  height: 36px !important;  /* ← 问题所在 */
+  width: 36px !important;
+  height: 36px !important;
 }
 
 div#workbench\.parts\.activitybar {
   background-color: var(--vscode-editorWidget-background) !important;
 }
 
-li.action-item.icon {
+/* Scoped to the activity bar: .action-item.icon is a generic class that also
+   appears in other toolbars, and an unconditional 2px border there shifts
+   their layout. */
+.monaco-workbench .activitybar li.action-item.icon {
   border: 2px solid transparent;
 }
 
-li.action-item.icon:hover {
+.monaco-workbench .activitybar li.action-item.icon:hover {
   border: 2px solid var(--vscode-icon-foreground);
 }
 
-li.action-item.icon.checked:hover .codicon:before {
+.monaco-workbench .activitybar li.action-item.icon.checked:hover .codicon:before {
   color: var(--vscode-activityBar-activeBorder) !important;
 }
 
-li.action-item.icon.checked {
+.monaco-workbench .activitybar li.action-item.icon.checked {
   border: 2px solid var(--vscode-activityBar-activeBorder);
 }
 
-li.action-item.icon.checked a.action-label.codicon {
+.monaco-workbench .activitybar li.action-item.icon.checked a.action-label.codicon {
   color: var(--vscode-activityBar-activeBorder) !important;
   border-radius: 12px !important;
 }
@@ -107,7 +109,12 @@ li.action-item.icon.checked a.action-label.codicon {
   margin-right: 0;
 }
 
-.monaco-list.mouse-support .monaco-list-row {
+/* Rounded rows for the file explorer only.
+   This used to apply to every .monaco-list-row in the workbench, which broke
+   lists whose rows are absolutely positioned with a fixed height — most
+   visibly the Extensions view, where rows overlapped. Scoping it to the
+   explorer keeps the rounded look without leaking into other views. */
+.explorer-folders-view .monaco-list.mouse-support .monaco-list-row {
   border-radius: 6px;
   width: calc(100% - 8px);
   padding-right: 4px !important;

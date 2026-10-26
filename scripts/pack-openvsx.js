@@ -17,7 +17,6 @@ const path = require('path')
 const ROOT = path.resolve(__dirname, '..')
 const MANIFEST = path.join(ROOT, 'package.json')
 const OFFICIAL = 'be5invis.vscode-custom-css'
-const MIRROR = 's-h-a-d-o-w.vscode-custom-css'
 
 function main() {
   const outIndex = process.argv.indexOf('--out')
@@ -34,8 +33,13 @@ function main() {
     ? path.resolve(process.argv[outIndex + 1])
     : path.join(ROOT, `my-theme-vitesse-${pkg.version}-openvsx.vsix`)
 
-  pkg.extensionPack = pack.map(id => (id === OFFICIAL ? MIRROR : id))
-  console.log(`extensionPack: ${JSON.stringify(pack)} -> ${JSON.stringify(pkg.extensionPack)}`)
+  // Open VSX gets the theme alone. The loader's Open VSX presence is an
+  // unverified third-party mirror, and on forks the styling does not apply
+  // cleanly anyway, so this build binds to nothing and only carries the
+  // colour themes. Users who want the custom styling install the loader
+  // themselves; extension.js detects whichever build they chose.
+  delete pkg.extensionPack
+  console.log(`extensionPack: ${JSON.stringify(pack)} -> (removed for Open VSX)`)
 
   fs.writeFileSync(MANIFEST, `${JSON.stringify(pkg, null, '\t')}\n`)
   try {
@@ -45,8 +49,8 @@ function main() {
     })
   }
   finally {
-    // Always restore, even if packaging failed, so the repo never keeps the
-    // mirror publisher in its manifest.
+    // Always restore, even if packaging failed, so the repo never ships a
+    // manifest without its Marketplace dependency.
     fs.writeFileSync(MANIFEST, original)
     console.log('package.json restored')
   }

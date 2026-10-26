@@ -4,6 +4,8 @@ const path = require('path')
 const { pathToFileURL } = require('url')
 
 const CUSTOM_CSS_EXTENSION_ID = 'be5invis.vscode-custom-css'
+// Open VSX has no be5invis build; it carries a mirror of the same extension.
+const LOADER_IDS = [CUSTOM_CSS_EXTENSION_ID, 's-h-a-d-o-w.vscode-custom-css']
 const CONFIG_SECTION = 'vscode_custom_css'
 const INSTALL_COMMAND = 'extension.installCustomCSS'
 const UNINSTALL_COMMAND = 'extension.uninstallCustomCSS'
@@ -115,6 +117,21 @@ async function applyCustomCss(context, { interactive }) {
     return false
   }
 
+  // Check the loader is actually present before touching any settings: without
+  // it there is nothing to patch workbench.html, and writing imports would just
+  // leave dead entries behind. Both ids are accepted — the official publisher on
+  // the VS Code Marketplace, and the mirror Open VSX carries.
+  const loader = LOADER_IDS.map(id => vscode.extensions.getExtension(id)).find(Boolean)
+  if (!loader) {
+    if (interactive)
+      vscode.window.showWarningMessage(
+        'Vitesse: the "Custom CSS and JS Loader" extension is not installed, so the bundled styles cannot be enabled. '
+        + `Install ${LOADER_IDS.join(' or ')} and try again.`,
+      )
+    log('loader not installed, skipping')
+    return false
+  }
+
   const { urls, changed } = await syncImports(extensionPath)
   const signature = signatureOf(urls)
   const patched = isPatched(htmlPath)
@@ -131,13 +148,6 @@ async function applyCustomCss(context, { interactive }) {
     vscode.window.showWarningMessage(
       'Vitesse: VS Code\'s installation folder is not writable, so Custom CSS could not be enabled. '
       + 'Fix ownership of the VS Code install directory, then run "Vitesse: Apply Custom CSS and JS" again.',
-    )
-    return false
-  }
-
-  if (!vscode.extensions.getExtension(CUSTOM_CSS_EXTENSION_ID)) {
-    vscode.window.showWarningMessage(
-      'Vitesse: the "Custom CSS and JS Loader" extension is missing. Install be5invis.vscode-custom-css to use the bundled styles.',
     )
     return false
   }
